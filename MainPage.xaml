@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Reproduce.RadioGridVisible.MainPage">
+			 
+    <VerticalStackLayout>
+        <Grid x:Name="calendar"
+            RowDefinitions="31.5,Auto,31.5,31.5,31.5,31.5,31.5"
+            ColumnDefinitions="*,*,*,*,*,*,*">
+            <Label Grid.Row="1" Grid.Column="0" Text="1st" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="2nd" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="2" Text="3rd" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="3" Text="4th" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="4" Text="5th" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="5" Text="6th" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Grid.Row="1" Grid.Column="6" Text="7th" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+        <HorizontalStackLayout>
+            <Label Text="30 Visable"/>
+            <CheckBox IsChecked="False" CheckedChanged="VisableCheckedChanged" x:Name="visable"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+ 
+</ContentPage>
